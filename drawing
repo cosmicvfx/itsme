@@ -1,0 +1,33 @@
+function setup() {
+createCanvas(400, 400);
+}
+
+
+function draw() {
+  background(100,50,50);
+//head
+fill(255, 153, 102);
+ellipse(200, 120, 40, 70);
+  
+//body
+fill (2000,250,242);
+ellipse(200, 215, 100, 130);
+  
+//limbs
+line(300, 130, 172, 180);
+line(280, 230, 228, 180);
+line(200, 280, 250, 350);
+line(190, 280, 150, 350);
+  
+//eyes
+fill(255);
+ellipse(192, 100, 10, 8);
+ellipse(207, 100, 10, 8);
+fill(0);
+ellipse(189, 100, 5, 6);
+fill(0);
+ellipse(210, 100, 5, 6);
+
+//mouth
+arc(199, 130, 30, 5, 0, PI + QUARTER_PI, CHORD);
+}
